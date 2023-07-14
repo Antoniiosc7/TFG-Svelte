@@ -4,18 +4,18 @@
 - **Project description**: Relación de deportes entre fútbol (Premier League), tenis y baloncesto (NBA)
 - **Repository**: [gti-sos/SOS2122-23](https://github.com/gti-sos/SOS2122-23)
 - **URL**: 
-    - [http://sos2122-23.herokuapp.com](http://sos2122-23.herokuapp.com) 
-    - [http://sos2122-23.herokuapp.com/#/info](http://sos2122-23.herokuapp.com/#/info)
-    - [http://sos2122-23.herokuapp.com/#/groupgraph](http://sos2122-23.herokuapp.com/#/groupgraph)
+    - [http://tfg-svelte.vercel.app](http://tfg-svelte.vercel.app) 
+    - [http://tfg-svelte.vercel.app/#/info](http://tfg-svelte.vercel.app/#/info)
+    - [http://tfg-svelte.vercel.app/#/groupgraph](http://tfg-svelte.vercel.app/#/groupgraph)
 -  **Enlaces a API's**:
       - DOCS:
-        - API_v1: [https://sos2122-23.herokuapp.com/api/v1/tennis/docs](https://sos2122-23.herokuapp.com/api/v1/tennis/docs)
-        - API_v2: [https://sos2122-23.herokuapp.com/api/v2/tennis/docs](https://sos2122-23.herokuapp.com/api/v2/tennis/docs)
+        - API_v1: [https://tfg-svelte.vercel.app/api/v1/tennis/docs](https://tfg-svelte.vercel.app/api/v1/tennis/docs)
+        - API_v2: [https://tfg-svelte.vercel.app/api/v2/tennis/docs](https://tfg-svelte.vercel.app/api/v2/tennis/docs)
       - API: 
-        - API_v1: [https://sos2122-23.herokuapp.com/api/v1/tennis](https://sos2122-23.herokuapp.com/api/v1/tennis)
-        - API_v2: [https://sos2122-23.herokuapp.com/api/v2/tennis](https://sos2122-23.herokuapp.com/api/v2/tennis)
+        - API_v1: [https://tfg-svelte.vercel.app/api/v1/tennis](https://tfg-svelte.vercel.app/api/v1/tennis)
+        - API_v2: [https://tfg-svelte.vercel.app/api/v2/tennis](https://tfg-svelte.vercel.app/api/v2/tennis)
       - Front end:
-        - API_v2: [https://sos2122-23.herokuapp.com/#/tennis](https://sos2122-23.herokuapp.com/#/tennis)
+        - API_v2: [https://tfg-svelte.vercel.app/#/tennis](https://tfg-svelte.vercel.app/#/tennis)
 
      (developed by [Antonio Saborido Campos](https://github.com/Antoniiosc7)
 

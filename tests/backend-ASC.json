@@ -726,11 +726,11 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": "https://sos2122-23.herokuapp.com"
+			"value": "https://tfg-svelte.vercel.app"
 		},
 		{
 			"key": "HOST",
-			"value": "https://sos2122-23.herokuapp.com"
+			"value": "https://tfg-svelte.vercel.app"
 		},
 		{
 			"key": "API",
