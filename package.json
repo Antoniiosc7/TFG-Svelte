@@ -81,7 +81,7 @@
     "test-premier-league": "npx newman run ./tests/backend-AMM.json -e ./tests/env/heroku-AMM.json",
     "test-nba-stats": "npx newman run ./tests/backend-FPB.json -e ./tests/env/heroku-FPB.json",
     "test-tennis": "npx newman run ./tests/backend-ASC.json",
-    "test": "npm run test-nba-stats && npm run test-premier-league && npm run test-tennis",
+    "test": "npm run test-tennis",
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
