@@ -67,9 +67,9 @@
                 <td><input type="number" min="2000" bind:value={to}></td>
                 <td align="center"><Button outline color="dark" on:click={() => {
                     if (from === null || to === null) {
-                        window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos');
+                        window.alert('Los campos precio mínimo y máximo no pueden estar vacíos');
                     } else {
-                        checkMSG = "Datos cargados correctamente en ese periodo";
+                        checkMSG = "Datos cargados correctamente en ese rango de precios";
                         getEntries();
                     }
                 }}>
