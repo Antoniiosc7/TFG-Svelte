@@ -20,16 +20,12 @@
             <div class="col">
                 <a href="/#/groupgraph"><h5>GroupGraph</h5></a>
             </div>
-            `
+            <div class="col">
+                <a href="/#/Productos"><h5>Productos</h5></a>
+            </div>
             <div class="col" id="negro">|</div>
             <div class="col">
-                <a href="/#/premier-league"><h5>PremierLeague</h5></a>
-            </div>
-            <div class="col">
                 <a href="/#/tennis"><h5>Tennis</h5></a>
-            </div>
-            <div class="col">
-                <a href="/#/nba-stats"><h5>NBA</h5></a>
             </div>
         </div>
     </div>

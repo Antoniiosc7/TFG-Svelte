@@ -30,6 +30,7 @@ app.listen(port, () => {
 });
 
 //API Antonio Saborido
+/*
 const apiext5 = require("./src/back/tennis/apiext5");
 apiext5.register(app);
 
@@ -47,7 +48,7 @@ tennislivedata.register(app);
 
 const tennis_API = require("./src/back/tennis/tennis.js");
 tennis_API.register(app,db_tennis);
-
+*/
 const tennis_APIv2 = require("./src/back/tennis/tennisv2.js");
 tennis_APIv2.register(app,db_tennis2);
 

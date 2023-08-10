@@ -4,6 +4,9 @@
 
 	import List from "./tennis/list.svelte";
 	import Edit from "./tennis/edit.svelte";
+
+	import listaProductos from "./productos/listaProductos.svelte"
+
 	import Chart from "./tennis/chart.svelte";
 	import Chart2 from "./tennis/chart2.svelte";
 	import Twitch from "./tennis/twitch.svelte";
@@ -39,6 +42,7 @@
 		"/about" : About,
 		"/analytics" : Analytics,
 		"/integrations" : Integrations,
+		"/Productos": listaProductos,
 
 		"/tennis" : List,
 		"/tennis/:country/:year" : Edit,
@@ -56,6 +60,7 @@
 		"/tennis/apiext5chart": apiext5chart,
 		"/tennis/apiext6chart": apiext6chart,
 		"/tennis/apiext7chart": apiext7chart
+		
 	};
 </script>
 

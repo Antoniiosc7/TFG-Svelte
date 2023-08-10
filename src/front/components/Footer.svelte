@@ -1,5 +1,5 @@
 <footer>
-    <div class="copyright"> https://github.com/gti-sos/SOS2122-23</div>
+    <div class="copyright"> https://github.com/Antoniiosc7/TFG-Svelte</div>
 </footer>
 
 <style>

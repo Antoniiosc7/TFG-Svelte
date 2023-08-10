@@ -45,72 +45,9 @@
     <br>
     <div class="row">
         <div class="col-sm-4">
-            <div class="card">
-                <img
-                    src="https://elordenmundial.com/wp-content/uploads/2020/10/NBA-logo-baloncesto-historia-deporte-estados-unidos.jpg"
-                    alt="Avatar"
-                    style="width:100%"
-                />
-                <div class="container">
-                    <h4><b>NBA</b></h4>
-                    <p>Fernando Pardo Beltrán</p>
-                    <a href="api/v1/nba-stats">
-                        <button class="btn btn-primary" type="submit"
-                            >API v1</button>
-                    </a>
-                    <a href="api/v2/nba-stats">
-                        <button class="btn btn-primary" type="submit"
-                            >API v2</button>
-                    </a>
-                    <a href="api/v2/nba-stats/docs">
-                        <button class="btn btn-primary" type="submit"
-                            >Docs</button>
-                    </a>
-                    <a href="/#/nba-stats">
-                        <button class="btn btn-primary" type="submit"
-                            >Interfaz</button>
-                    </a>
-                </div>
-            </div>
+            
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img
-                    src="https://obamabcn.com/wp-content/uploads/2019/11/logo-premier-league.jpg"
-                    alt="Avatar"
-                    style="width:100%"
-                />
-                <div class="container">
-                    <h4><b>Premier League</b></h4>
-                    <p>Alberto Martín Martín</p>
-                    <a href="/api/v1/premier-league">
-                        <button class="btn btn-primary" type="submit"
-                            >API V1</button
-                        >
-                    </a>
-                    <a href="/api/v1/premier-league/docs">
-                        <button class="btn btn-primary" type="submit"
-                            >API V1 Docs</button
-                        >
-                    </a>
-                    <a href="/api/v2/premier-league">
-                        <button class="btn btn-primary" type="submit"
-                            >API V2</button
-                        >
-                    </a>
-                    <a href="/api/v2/premier-league/docs">
-                        <button class="btn btn-primary" type="submit"
-                            >API V2 Docs</button
-                        >
-                    </a>
-                    <a href="/#/premier-league">
-                        <button class="btn btn-primary" type="submit"
-                            >Interfaz</button
-                        >
-                    </a>
-                </div>
-            </div>
-        </div>
+
         <div class="col-sm-4">
             <div class="card">
                 <img
@@ -159,37 +96,16 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-4">
+            
+        </div>
     </div>
     <br>
     <div class="row">
         <div class="col-sm-4">
-            <div class="card">
-                <div class="container">
-                    <h4><b>Fernando Pardo Beltrán</b></h4>
-                    <p>Fuente de datos:</p>
-                    <a href="/api/v2/nba-stats">
-                        <button class="btn btn-primary" type="submit"
-                            >#</button
-                        >
-                    </a>
-                    
-                </div>
-            </div>
+            
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="container">
-                    <h4><b>Alberto</b></h4>
-                    <p>Fuente de datos:</p>
-                    <a href="/api/v2/premier-league">
-                        <button class="btn btn-primary" type="submit"
-                            > #</button
-                        >
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
+
         <div class="col-sm-4">
             <div class="card">
                 <div class="container">
@@ -199,6 +115,10 @@
                     
                 </div>
             </div>
+        </div>
+
+        <div class="col-sm-4">
+            
         </div>
     </div>
 </main>
