@@ -5,9 +5,12 @@
     let stats_name = [];
     let stats_points = [];
 
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
+    
     async function getStats() {
         console.log("Fetching stats....");
-        const res = await fetch("api/v1/tennis-apiext");
+        const res = await fetch(`${BASEUrl}/api/v1/tennisLiveRanking`);
         if (res.ok) {
             const data = await res.json();
             console.log("Estadísticas recibidas: " + data.length);

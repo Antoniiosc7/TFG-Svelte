@@ -1,4 +1,7 @@
 <script>
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
+
     import {onMount} from 'svelte';
     const delay = ms => new Promise(res => setTimeout(res,ms));
     let stats = [];
@@ -8,7 +11,7 @@
     let stats_masters_finals = []; 
     async function getPEStats(){
         console.log("Fetching stats....");
-        const res = await fetch("/api/v2/tennis");
+        const res = await fetch(`${BASEUrl}/api/v2/tennis`);
         if(res.ok){
             const data = await res.json();
             stats = data;

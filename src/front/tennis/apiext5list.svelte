@@ -3,13 +3,14 @@
     import { onMount } from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
-
+	import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
     let entries = [];
     onMount(getEntries);
 
     async function getEntries(){
         console.log("Fetching entries....");
-        const res = await fetch("/api/v1/apiext5"); 
+        const res = await fetch(`${BASEUrl}/api/v1/tennisWomen`); 
         if(res.ok){
             const data = await res.json();
             entries = data;
@@ -30,7 +31,7 @@
 	  </figure>
 	  <td align="center">
 		<Button color="success" on:click={function (){
-			window.location.href = `https://sos2122-23.herokuapp.com/#/tennis/apiext5chart`
+			window.location.href = `/#/tennis/apiext5chart`
 		}}>
 			Gráfica
 		</Button>

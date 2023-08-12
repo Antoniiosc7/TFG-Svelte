@@ -6,10 +6,12 @@
 
     let entries = [];
     onMount(getEntries);
-
+	import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
+	
     async function getEntries(){
         console.log("Fetching entries....");
-        const res = await fetch("/api/v1/tennis-apiext"); 
+        const res = await fetch(`${BASEUrl}/api/v1/tennisLiveRanking`); 
         if(res.ok){
             const data = await res.json();
             entries = data;

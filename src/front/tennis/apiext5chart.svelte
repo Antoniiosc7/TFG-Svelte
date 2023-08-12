@@ -4,13 +4,14 @@
     let stats = [];
     let stats_teamname = [];
     let stats_points = [];
-
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
     async function getTennisWomen() {
         console.log("Fetching stats....");
       
         
             const res = await fetch(
-                "/api/v1/apiext5/"
+                `${BASEUrl}/api/v1/tennisWomen/`
             );
             if (res.ok) {
                 const data = await res.json();

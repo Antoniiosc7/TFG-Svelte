@@ -13,10 +13,6 @@
 	import TwitchChart from "./tennis/twitchchart.svelte";
 	import ApitennisList from "./tennis/apitennislist.svelte";
 	import ApitennisChart from "./tennis/apitennislistchart.svelte";
-	import apiext3list from "./tennis/apiext3list.svelte";
-	import apiext3chart from "./tennis/apiext3chart.svelte";
-	import apiext4list from "./tennis/apiext4list.svelte";
-	import apiext4chart from "./tennis/apiext4chart.svelte";
 	import apiext5list from "./tennis/apiext5list.svelte";
 	import apiext5chart from "./tennis/apiext5chart.svelte";
 	import apiext6chart from "./tennis/apiext6chart.svelte";
@@ -52,10 +48,6 @@
 		"/tennis/twitchchart" : TwitchChart,
 		"/tennis/apitennislist": ApitennisList,
 		"/tennis/apitennischart": ApitennisChart,
-		"/tennis/apiext3list": apiext3list,
-		"/tennis/apiext3chart": apiext3chart,
-		"/tennis/apiext4list": apiext4list,
-		"/tennis/apiext4chart": apiext4chart,
 		"/tennis/apiext5list": apiext5list,
 		"/tennis/apiext5chart": apiext5chart,
 		"/tennis/apiext6chart": apiext6chart,

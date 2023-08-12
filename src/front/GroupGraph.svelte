@@ -1,4 +1,6 @@
 <script>
+    import { getBASEUrl } from '../../config.js';
+    const BASEUrl = getBASEUrl();
     import {onMount} from 'svelte';    
     import {Button} from 'sveltestrap';
     const delay = ms => new Promise(res => setTimeout(res,ms));
@@ -21,8 +23,8 @@
 
     async function getData(){
         const nba2 = await fetch("/api/v2/nba-stats");
-        const premier2 = await fetch("/api/v2/premier-league");
-        const tennis2 = await fetch("/api/v2/tennis");
+        const premier2 = await fetch(`${BASEUrl}/api/v2/premier-league`);
+        const tennis2 = await fetch(`${BASEUrl}/api/v2/tennis`);
         if (nba2.ok && premier2.ok && tennis2.ok){
             NBAStats = await nba2.json();
             TennisStats = await tennis2.json();
