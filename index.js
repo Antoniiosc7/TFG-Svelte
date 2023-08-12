@@ -3,15 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 8081;
-const BASE_API_URL = "/api/v1"; 
-const cors = require("cors");
-
 const Datastore = require('nedb');
-app.use(cors());
 
-//BASE DE DATOS
-db_tennis = new Datastore();
-db_tennis2 = new Datastore();
 
 app.use(bodyParser.json());
 app.use("/",express.static('public'));
@@ -48,13 +41,13 @@ tennislivedata.register(app);
 
 const tennis_API = require("./src/back/tennis/tennis.js");
 tennis_API.register(app,db_tennis);
-*/
+
 const tennis_APIv2 = require("./src/back/tennis/tennisv2.js");
 tennis_APIv2.register(app,db_tennis2);
-
+*/
 
 //Proxy Antonio Saborido Campos: 
-
+/*
 var paths3='/remoteApiBelen';
 var paths4='/remoteApiBelenLoadInitialData';
 
@@ -71,3 +64,4 @@ app.use(paths4, function(req, res) {
 });
 
 
+*/

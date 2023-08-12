@@ -3,8 +3,9 @@
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
 	import { Alert } from 'sveltestrap';
+	var BASE_API_PATH = "http://46.183.118.200:8082/api/v2/tennis";
 
-	var BASE_API_PATH = "/api/v2/tennis";
+	//var BASE_API_PATH = "/api/v2/tennis";
     let entries = [];
 	let newEntry = {
 		country: "",
@@ -32,7 +33,7 @@
     //GET
     async function getEntries(){
         console.log("Fetching entries....");
-		let cadena = `/api/v2/tennis?limit=${limit}&&offset=${offset*10}&&`;
+		let cadena = `${BASE_API_PATH}?limit=${limit}&&offset=${offset*10}&&`;
 		if (from != null) {
 			cadena = cadena + `from=${from}&&`
 		}

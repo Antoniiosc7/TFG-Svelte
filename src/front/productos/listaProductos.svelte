@@ -170,9 +170,5 @@
     cursor: pointer;
 }
 
-.pagination button.active {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-}
+
 </style>
