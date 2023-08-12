@@ -27,6 +27,10 @@
 	import About from "./About.svelte";
 	import Integrations from "./Integrations.svelte";
 
+	import Premier from "./premier-league/premier.svelte";
+	import PremierEdit from "./premier-league/premierEdit.svelte";
+	import PremierChart from "./premier-league/premierCharts.svelte";
+	import PremierChart2 from "./premier-league/premierCharts2.svelte";
 	
 
 	const routes = {
@@ -51,8 +55,12 @@
 		"/tennis/apiext5list": apiext5list,
 		"/tennis/apiext5chart": apiext5chart,
 		"/tennis/apiext6chart": apiext6chart,
-		"/tennis/apiext7chart": apiext7chart
+		"/tennis/apiext7chart": apiext7chart,
 		
+		"/premier-league" : Premier,
+		"/premier-league/:country/:year": PremierEdit,
+		"/premier-league/charts" : PremierChart,
+		"/premier-league/charts2" : PremierChart2
 	};
 </script>
 
