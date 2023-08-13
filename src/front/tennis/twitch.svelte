@@ -3,13 +3,14 @@
     import { onMount } from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
-
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
     let entries = [];
     onMount(getEntries);
 
     async function getEntries(){
         console.log("Fetching entries....");
-        const res = await fetch("/api/v1/tennis-twitch"); 
+        const res = await fetch(`${BASEUrl}/api/v1/tennis-twitch`);
         if(res.ok){
             const data = await res.json();
             entries = data;
@@ -58,12 +59,14 @@ loading
 					<td>{entry.view_count}</td>
                     <td>
 						<iframe
-   src="https://clips.twitch.tv/embed?clip={entry.id}&parent=localhost"
-   height="360"
-   width="640"
-   allowfullscreen>
-</iframe>
-						</td>
+							src={`https://clips.twitch.tv/embed?clip=${entry.id}&parent=${getBASEUrl}`}
+							height="360"
+							width="640"
+							allowfullscreen
+							title="Twitch Clip"
+						></iframe>
+
+					</td>
                   				
 				</tr>
 			{/each}

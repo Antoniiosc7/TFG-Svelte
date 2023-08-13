@@ -190,45 +190,6 @@
 		}
 	}
 
-	//SEARCH
-	/*async function search (sCountry, sYear, sAppearences, sCleanSheets, sGoals){
-            
-            if(sCountry==null){
-                sCountry="";
-            }
-            if(sYear==null){
-                sYear="";
-            }
-            if(sAppearences==null){
-                sAppearences="";
-            }
-            if(sCleanSheets==null){
-                sCleanSheets="";
-            }
-            if(sGoals==null){
-                sGoals="";
-            }
-            visible = true;
-            const res = await fetch(BASE_API_PATH + "?country="+sCountry
-            +"&year="+sYear
-            +"&appearences="+sAppearences
-            +"&cleanSheets="+sCleanSheets
-            +"&goals="+sGoals
-            )
-            if (res.ok){
-                const json = await res.json();
-                entries = json;
-                console.log("Found "+ entries.length + " data");
-                if(entries.length==1){
-                    color = "success"
-                    checkMSG = "Se ha encontrado un dato para tu búsqueda";
-                }else{
-                    color = "success"
-                    checkMSG = "Se han encontrado " + entries.length + " datos para tu búsqueda";
-                }
-            }
-    }*/
-    /*-------------------------PAGINACIÓN-------------------------*/
         //getNextPage (B)
         async function getNextPage() {
     
@@ -325,45 +286,7 @@
         <br>
         <h4 style="text-align:center"><strong>Búsqueda general de parámetros</strong></h4>
         <br>
-        <!--<Table bordered responsive>
-            <thead>
-                <tr>
-            <!--<th>Búsqueda por país</th>
-            <th>Búsqueda por año inicio</th>
-            <th>Búsqueda por año fin</th>
-            <th>Búsqueda</th>
-            <!--<th>Búsqueda por apariciones</th>
-            <th>Búsqueda por portería vacía</th>
-            <th>Búsqueda por goles</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <!--<td><input type = "text" placeholder="País" bind:value="{sCountry}"></td>
-                <!--<td><input type = "number" placeholder="2020" bind:value="{sYear}"></td>
-                <td><input type="number" placeholder="fecha inicio" min="2000" bind:value="{from}"></td>
-				<td><input type="number" placeholder="fecha fin"    min="2000" bind:value="{to}"></td>
-				<td align="center"><Button outline color="dark" on:click="{()=>{
-					if (from == null || to == null) {
-						window.alert('Los campos fecha inicio y fecha fin no pueden estar vacíos')
-					}else{
-						getEntries();
-                        checkMSG = "Datos cargados correctamente en ese periodo";
-					}
-				}}">
-					Buscar
-					</Button>
-				</td>
-                <!--<td><input type = "number" placeholder="12" bind:value="{sAppearences}"></td>
-                <td><input type = "number" placeholder="18" bind:value="{sCleanSheets}"></td>
-                <td><input type = "number" placeholder="7" bind:value="{sGoals}"></td>
-                
-            </tr>
-            </tbody>
-        </Table>-->
-        <!--<div style="text-align:center">
-            <Button outline color="primary" on:click="{search (sCountry, sYear, sAppearences, sCleanSheets, sGoals)}">Buscar</Button>
-        </div>-->
+        
         <Table bordered>
             <thead>
                 <tr>
@@ -474,15 +397,11 @@
 </main>
 
 <style>
-	input{
-		width: 100%;
-	}
+
 
 	thead{
 		background-color: lightgreen;
 	}
 
-	tr:nth-child(even){
-		background-color: springgreen;
-	}
+
 </style>

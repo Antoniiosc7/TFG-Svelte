@@ -4,10 +4,11 @@
     let data = [];
     let stats_title = [];
     let stats_views = [];
-
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
     async function getStats() {
         console.log("Fetching stats....");
-        const res = await fetch("api/v1/tennis-twitch");
+        const res = await fetch(`${BASEUrl}/api/v1/tennis-twitch`);
         if (res.ok) {
             const data = await res.json();
             console.log("Estadísticas recibidas: " + data.length);
