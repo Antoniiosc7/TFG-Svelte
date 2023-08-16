@@ -12,11 +12,11 @@
     var BASE_API_PATH = `${BASEUrl}/api/v2/tennis`;
 
     let entry = {};
-    let updatedCountry;
-    let updatedYear;
-    let updatedmost_grand_slam;
-    let updatedmasters_finals;
-    let updatedolympic_gold_medals;
+    let updatedCountry = {};
+    let updatedYear = "";
+    let updatedmost_grand_slam = "";
+    let updatedmasters_finals = "";
+    let updatedolympic_gold_medals = "";
     let errorMsg = "";
 
     onMount(getEntries);
@@ -25,9 +25,6 @@
         const res = await fetch(BASE_API_PATH+"/"+params.country+"/"+params.year); 
         if(res.ok){
             const data = await res.json();
-            entry = data;
-            updatedCountry = entry.country;
-            updatedYear = entry.year;
             updatedmost_grand_slam = entry.most_grand_slam;
             updatedmasters_finals = entry.masters_finals;
             updatedolympic_gold_medals = entry.olympic_gold_medals;
@@ -44,8 +41,8 @@
 			{
 				method: "PUT",
 				body: JSON.stringify({
-                    country: updatedCountry,
-                    year: parseInt(updatedYear),
+                    country: params.country,
+                    year: parseInt(params.year),
                     most_grand_slam: parseFloat(updatedmost_grand_slam),
                     masters_finals: parseFloat(updatedmasters_finals),
                     olympic_gold_medals: parseFloat(updatedolympic_gold_medals)
@@ -91,8 +88,8 @@
                     <th>Grand Slams Ganados</th>
                     <th>Masters 1000 Ganados</th>
                     <th>Medallas Olimpicas</th>
-                    <th></th>
-                    <th> </th>
+                    <th>Acciones</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -103,7 +100,7 @@
                     <td><input bind:value="{updatedmasters_finals}"></td>
                     <td><input bind:value="{updatedolympic_gold_medals}"></td>
                     <td><Button outline color="primary" on:click="{EditEntry}">
-                        Editar
+                        Actualizar
                         </Button>
                     </td>
                 </tr>
