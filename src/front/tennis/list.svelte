@@ -52,20 +52,7 @@
 			Errores(res.status);
 		}
     }
-    /*
-    async function getEntries(){
-        console.log("Fetching entries....");
-        const res = await fetch("/api/v1/tennis"); 
-        if(res.ok){
-            console.log("Ok:");
-            const data = await res.json();
-            entries = data;
-            console.log("Received entries: "+entries.length);
-        }else {
-                checkMSG= res.status + ": Recursos no encontrados ";
-                console.log("ERROR! no encontrado");
-            }
-    }*/
+
     //GET INITIALDATA
     async function LoadEntries() {
  
@@ -198,6 +185,7 @@
 
 
 <main>
+	
 	<figure class="text-center">
 		<blockquote class="blockquote">
 		  <h1>TENNIS API</h1>
@@ -222,7 +210,8 @@
 			<tr>
 				<th>Fecha inicio</th>
 				<th>Fecha fin</th>
-				
+				<th></th>
+                <th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -251,21 +240,6 @@
                     
 					</Button>
                     
-				</td>
-				
-				<td align="center">
-					<Button color="success" on:click={function (){
-						window.location.href = `/#/tennis/chart`
-					}}>
-						Gráfica 1
-					</Button>
-				</td>
-				<td align="center">
-					<Button color="success" on:click={function (){
-						window.location.href = `/#/tennis/chart2`
-					}}>
-						Gráfica 2
-					</Button>
 				</td>
 			</tr>
 			
@@ -326,7 +300,22 @@
 			</tr>
 		</tbody>
 	</Table>
- 
+	<Button color="success" on:click="{LoadEntries}">
+		Cargar datos inciales
+	</Button>
+	<Button color="danger" on:click="{BorrarEntries}">
+		Eliminar todo
+	</Button>
+	<Button color="info" on:click={function (){
+		window.location.href = `/#/tennis/chart`
+	}}>
+		Gráfica
+	</Button>
+	<Button color="info" on:click={function (){
+		window.location.href = `/#/tennis/chart2`
+	}}>
+		Gráfica2
+	</Button>
 {/await}
 <div align="center">
     {#each Array(maxPages+1) as _,page}

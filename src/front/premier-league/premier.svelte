@@ -270,6 +270,7 @@
 
 
 <main>
+    <br>
 
     <h1 style ="text-align: center;">Tabla de datos de estadísticas de los jugadores de la Premier League</h1>
 
@@ -330,7 +331,7 @@
         <br>
 
         <Table bordered responsive> 
-            <thead>
+            <thead id="titulitos">
                 <tr>
                     <th>Pais</th>
                     <th>Año</th>
@@ -359,8 +360,9 @@
                 <td>{entry.appearences}</td>
                 <td>{entry.cleanSheets}</td>
                 <td>{entry.goals}</td>
+                
+                <td><a href="#/premier-league/{entry.country}/{entry.year}"><Button outline color="warning">Editar</Button></a></td>
                 <td><Button outline color="danger" on:click="{deleteStat(entry.country, entry.year)}">Borrar</Button></td>
-                <td><a href="#/premier-league/{entry.country}/{entry.year}"><Button outline color="primary">Editar</Button></a></td>
             </tr>
                 
         {/each}
@@ -389,19 +391,10 @@
 				Página Anterior
 			</Button>
 			<Button outline color="primary" on:click="{getNextPage}">
-				Páguina Siguiente
+				Página Siguiente
 			</Button>
 		</div>
 
         {/await} 
 </main>
 
-<style>
-
-
-	thead{
-		background-color: lightgreen;
-	}
-
-
-</style>

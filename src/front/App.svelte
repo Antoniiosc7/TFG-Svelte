@@ -9,45 +9,51 @@
 
 	import Chart from "./tennis/chart.svelte";
 	import Chart2 from "./tennis/chart2.svelte";
+	/*
 	import Twitch from "./tennis/twitch.svelte";
 	import TwitchChart from "./tennis/twitchchart.svelte";
 	import ApitennisList from "./tennis/apitennislist.svelte";
 	import ApitennisChart from "./tennis/apitennislistchart.svelte";
 	import apiext5list from "./tennis/apiext5list.svelte";
-	import apiext5chart from "./tennis/apiext5chart.svelte";
+	import apiext5chart from "./Externas/apiext5chart.svelte";
 	import apiext6chart from "./tennis/apiext6chart.svelte";
 	import apiext7chart from "./tennis/apiext7chart.svelte";
-	
+	*/
 	import Info from "./Info.svelte";
 	import Footer from "./components/Footer.svelte";
 	import Header from "./components/Header.svelte";
-	import GroupGraph from "./GroupGraph.svelte";
+	import Grupal1 from "./Grupal1.svelte";
 
 	import Analytics from "./Analytics.svelte";
 	import About from "./About.svelte";
-	import Integrations from "./Integrations.svelte";
+	import Grupal2 from "./Grupal2.svelte";
 
 	import Premier from "./premier-league/premier.svelte";
 	import PremierEdit from "./premier-league/premierEdit.svelte";
 	import PremierChart from "./premier-league/premierCharts.svelte";
 	import PremierChart2 from "./premier-league/premierCharts2.svelte";
+	import Visualizaciones from "./Visualizaciones.svelte";
 	
 
 	const routes = {
 
 		"/": Home,
 
-		"/groupgraph" : GroupGraph,
+		"/Grupal1" : Grupal1,
+		"/Grupal2" : Grupal2,
+	
+
 		"/info" : Info,
 		"/about" : About,
 		"/analytics" : Analytics,
-		"/integrations" : Integrations,
-		"/Productos": listaProductos,
 
+		"/Productos": listaProductos,
+		"/Visualizaciones" : Visualizaciones,
 		"/tennis" : List,
 		"/tennis/:country/:year" : Edit,
 		"/tennis/chart" : Chart,
 		"/tennis/chart2" : Chart2,
+		/*
 		"/tennis/twitch" : Twitch,
 		"/tennis/twitchchart" : TwitchChart,
 		"/tennis/apitennislist": ApitennisList,
@@ -56,7 +62,7 @@
 		"/tennis/apiext5chart": apiext5chart,
 		"/tennis/apiext6chart": apiext6chart,
 		"/tennis/apiext7chart": apiext7chart,
-		
+		*/
 		"/premier-league" : Premier,
 		"/premier-league/:country/:year": PremierEdit,
 		"/premier-league/charts" : PremierChart,

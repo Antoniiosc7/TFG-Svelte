@@ -4,6 +4,7 @@
     const BASEUrl = getBASEUrl();
     const delay = ms => new Promise(res => setTimeout(res,ms));
     let stats = [];
+    import Button from 'sveltestrap/src/Button.svelte';
     let stats_country_date = [];
     let appearences = [];
     let cleanSheets = [];
@@ -102,7 +103,35 @@
 </svelte:head>
 
 <main>
+    <br />
+    <div class="button-container">
+        <Button outline color="btn btn-outline-primary" href="/#/Visualizaciones"
+            >Pagina de visualizaciones</Button
+        >
+        <Button outline color="btn btn-outline-primary" href="/#/Premier-League"
+            >Front-end Premier-League</Button
+        >
+    </div>
     <figure class="highcharts-figure">
         <div id="container"></div>
     </figure>
 </main>
+
+<style>
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+ 
+</style>

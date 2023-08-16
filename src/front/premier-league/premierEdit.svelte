@@ -45,7 +45,7 @@
 
     async function EditEntry(){
         console.log("Updating entry...."+updatedCountry);
-        const res = await fetch("api/v2/premier-league/"+params.country+"/"+params.year,
+        const res = await fetch(BASE_API_PATH+"/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({

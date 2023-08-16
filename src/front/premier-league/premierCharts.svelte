@@ -5,6 +5,7 @@
     const delay = ms => new Promise(res => setTimeout(res,ms));
     let data = [];
     let stats_country_date = [];
+    import Button from 'sveltestrap/src/Button.svelte';
     let appearences = [];
     let cleanSheets = [];
     let goals = []; 
@@ -63,17 +64,35 @@
 </svelte:head>
 
 <main>
+    <br />
+    <div class="button-container">
+        <Button outline color="btn btn-outline-primary" href="/#/Visualizaciones"
+            >Pagina de visualizaciones</Button
+        >
+        <Button outline color="btn btn-outline-primary" href="/#/Premier-League"
+            >Front-end Premier-League</Button
+        >
+    </div>
     <h2>Gráfica de datos sobre la Premier-League</h2>
     <h4>Biblioteca: Plotly</h4>
-    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
-    <a href="/#/premier-league" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
+    <div id='myDiv'></div>
 </main>
 
 <style>
-    h2{
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
+    h2 {
         text-align: center;
     }
-    h4{
+    
+    h4 {
         text-align: center;
     }
+ 
 </style>

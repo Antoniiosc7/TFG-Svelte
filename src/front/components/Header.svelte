@@ -1,35 +1,64 @@
-<header>
-    <div class="container">
-        <div id="titulo">
-            <a href="http://46.183.118.200:8082"><h2>INICIO</h2></a>
-        </div>
+<script>
+    import 'bootstrap/dist/css/bootstrap.min.css'; // Importar estilos de Bootstrap
+    let isDropdownOpen = false;
 
-        <div class="row">
-            <div class="col">
+    function toggleDropdown() {
+        isDropdownOpen = !isDropdownOpen;
+    }
+/*
+
+ <div class="col">
                 <a href="/#/about"><h5>About</h5></a>
             </div>
-            <div class="col">
-                <a href="/#/analytics"><h5>Analytics</h5></a>
-            </div>
+ 
             <div class="col">
                 <a href="/#/integrations"><h5>Integrations</h5></a>
             </div>
             <div class="col">
                 <a href="/#/info"><h5>Info</h5></a>
             </div>
-            <div class="col">
-                <a href="/#/groupgraph"><h5>GroupGraph</h5></a>
-            </div>
-            
-            <div class="col" id="negro">|</div>
-            <div class="col">
-                <a href="/#/tennis"><h5>Tennis</h5></a>
-            </div>
-            <div class="col">
+             <div class="col">
                 <a href="/#/Productos"><h5>Productos</h5></a>
             </div>
+
+*/
+</script>
+
+<header>
+    <div class="container">
+        <div id="titulo" class="mb-4">
+            <a href="http://46.183.118.200:8082"><h2 class="text-white">INICIO</h2></a>
+        </div>
+
+        <div class="row">
+            
+           <div class="col">
+                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
+            </div>
             <div class="col">
-                <a href="/#/premier-league"><h5>PremierLeague</h5></a>
+                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
+            </div>
+            <div class="col">
+                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
+            </div>
+            
+            <div class="col" id="negro"><h5>|</h5></div>
+
+            
+
+
+            <div class="col dropdown">
+                <a id="dropdownMenuButton" data-toggle="dropdown" on:click={toggleDropdown}>
+                    <h5>Front-Ends</h5>
+                </a>
+                <div class={"dropdown-menu " + (isDropdownOpen ? 'show' : '')} aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/#/Tennis">Tennis</a>
+                    <a class="dropdown-item" href="/#/Premier-League">Premier-League</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
             </div>
         </div>
     </div>
@@ -37,33 +66,43 @@
 
 <style>
     a {
-        color: black;
+        
+        text-decoration: none;
     }
     a:hover {
         color: blue;
     }
-    #negro{
-        color:black;
-    }
 
     .row {
-        padding: 2px;
+        padding: 10px;
         color: white;
     }
 
     .container {
         padding: 2px 8px;
         text-align: center;
-
     }
     header {
-        background: #f7f7f7;
+        background: #3498db;
         padding: 10px;
     }
 
-    h5 {
+    h2, h5 {
         margin: 0;
         text-align: center;
+        color: black;
     }
 
+    /* Estilos para el dropdown */
+    .col.dropdown .dropdown-menu {
+        background-color: #2980b9;
+    }
+
+    .col.dropdown .dropdown-item {
+        color: rgb(0, 0, 0);
+    }
+
+    .col.dropdown .dropdown-item:hover {
+        background-color: #1d67a8;
+    }
 </style>

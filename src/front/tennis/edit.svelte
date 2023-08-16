@@ -5,10 +5,11 @@
     import Button from 'sveltestrap/src/Button.svelte';
     import Table from 'sveltestrap/src/Table.svelte';
     import { Alert } from 'sveltestrap';
-
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
     let visible = false;
     let color = "danger";
-
+    var BASE_API_PATH = `${BASEUrl}/api/v2/tennis`;
 
     let entry = {};
     let updatedCountry;
@@ -21,7 +22,7 @@
     onMount(getEntries);
     async function getEntries(){
         console.log("Fetching entries....");
-        const res = await fetch("/api/v2/tennis/"+params.country+"/"+params.year); 
+        const res = await fetch(BASE_API_PATH+"/"+params.country+"/"+params.year); 
         if(res.ok){
             const data = await res.json();
             entry = data;
@@ -39,7 +40,7 @@
     }
     async function EditEntry(){
         console.log("Updating entry...."+updatedCountry);
-        const res = await fetch("/api/v2/tennis/"+params.country+"/"+params.year,
+        const res = await fetch(BASE_API_PATH+"/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({
