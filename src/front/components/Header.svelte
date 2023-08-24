@@ -5,6 +5,14 @@
     function toggleDropdown() {
         isDropdownOpen = !isDropdownOpen;
     }
+
+
+    function handleDropdownKey(event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggleDropdown();
+        }
+    }
 /*
 
  <div class="col">
@@ -27,28 +35,34 @@
 <header>
     <div class="container">
         <div id="titulo" class="mb-4">
-            <a href="http://46.183.118.200:8082"><h2 class="text-white">INICIO</h2></a>
+            <a href="http://tfg.antoniosaborido.es"><h2 class="text-white">INICIO</h2></a>
         </div>
 
         <div class="row">
-            
+            <!--
            <div class="col">
                 <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
             </div>
             <div class="col">
                 <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
             </div>
+              -->
             <div class="col">
                 <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
             </div>
-            
+      
             <div class="col" id="negro"><h5>|</h5></div>
 
             
 
 
             <div class="col dropdown">
-                <a id="dropdownMenuButton" data-toggle="dropdown" on:click={toggleDropdown}>
+                <a
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    on:click={toggleDropdown}
+                    on:keydown={handleDropdownKey}
+                    tabindex="0">
                     <h5>Front-Ends</h5>
                 </a>
                 <div class={"dropdown-menu " + (isDropdownOpen ? 'show' : '')} aria-labelledby="dropdownMenuButton">

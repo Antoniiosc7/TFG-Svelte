@@ -3,7 +3,10 @@
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
 	import { Alert } from 'sveltestrap';
-	var BASE_API_PATH = "http://46.183.118.200:8082/api/v2/tennis";
+
+    import { getBASEUrl } from '../../../config.js';
+    const BASEUrl = getBASEUrl();
+	var BASE_API_PATH = `${BASEUrl}/api/v2/tennis`;
 
 	//var BASE_API_PATH = "/api/v2/tennis";
     let entries = [];
