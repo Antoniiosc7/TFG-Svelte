@@ -5,7 +5,7 @@
     import Button from 'sveltestrap/src/Button.svelte';
     import Table from 'sveltestrap/src/Table.svelte';
     import { Alert } from 'sveltestrap';
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     let visible = false;
     let color = "danger";

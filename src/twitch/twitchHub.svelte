@@ -75,16 +75,17 @@
             <a class="documentacion" href="https://dev.twitch.tv/docs/api/"><button type="button" class="btn btn-success">Documentación</button></a>
         </h1>
         <br>
-    <p>En la era digital actual, la interacción en vivo y la transmisión de contenido han adquirido una importancia sin precedentes. Plataformas como Twitch han revolucionado la manera en que las personas se conectan, comparten y consumen contenido en tiempo real.</p>
+    <p>La interacción en vivo y la transmisión de contenido han adquirido una importancia sin precedentes. Plataformas como Twitch han revolucionado la manera en que las personas se conectan, comparten y consumen contenido en tiempo real.</p>
 
-    <p>Esta API ofrece un acceso estructurado a diversos datos y funciones clave dentro de Twitch, lo que permite a los desarrolladores aprovechar al máximo las posibilidades de la plataforma y brindar a los usuarios experiencias más personalizadas y enriquecedoras.</p>
+    <p>Esta API ofrece un acceso estructurado a diversos datos y funciones clave dentro de Twitch, lo que permite aprovechar al máximo las posibilidades de la plataforma y brindar a los usuarios experiencias más personalizadas y enriquecedoras.</p>
 
     <p>Entre las capacidades que ofrece la Twitch API se encuentran:</p>
     <ol>
-            <li><b>Obtención de Datos en Tiempo Real:</b> Los desarrolladores pueden acceder a datos en tiempo real sobre transmisiones en vivo, espectadores, seguidores y chats. Esto permite crear aplicaciones que muestren información actualizada sobre los streamers más populares, las tendencias emergentes y mucho más."</li>
-            <li><b>Interacción con la Audiencia:</b> La API permite a los desarrolladores construir herramientas para interactuar con la audiencia de una manera única. Esto podría incluir encuestas en tiempo real, minijuegos interactivos o incluso la integración de comentarios y saludos automáticos durante las transmisiones."</li>
-            <li><b>Creación de Extensiones: </b>Las extensiones de Twitch son módulos interactivos que los streamers pueden incorporar en sus transmisiones para enriquecer la experiencia de sus espectadores. La Twitch API permite a los desarrolladores crear y personalizar estas extensiones, ofreciendo desde sorteos y encuestas hasta minijuegos y listas de reproducción de videos."</li>
-            <li> <b>Análisis y Monitoreo: </b>La API también proporciona acceso a datos analíticos que permiten a los desarrolladores entender mejor cómo los usuarios interactúan con el contenido. Esto es esencial para los streamers y las marcas que desean ajustar sus estrategias para alcanzar una audiencia más amplia."</li>
+            <li><b>Obtención de Datos en Tiempo Real:</b>Permite acceder a datos en tiempo real sobre transmisiones en vivo, espectadores, seguidores y chats.</li>
+            <li><b>Interacción con la Audiencia:</b> La API permite construir herramientas para interactuar con la audiencia de una manera única. </li>
+            <li><b>Creación de Extensiones: </b>Las extensiones de Twitch son módulos interactivos que los streamers pueden incorporar en sus transmisiones para enriquecer la experiencia de sus espectadores. La Twitch API permite crear y personalizar estas extensiones, ofreciendo desde sorteos y encuestas hasta minijuegos y listas de reproducción de videos."</li>
+            <li> <b>Análisis y Monitoreo: </b>La API también proporciona acceso a datos analíticos que permiten entender mejor cómo los usuarios interactúan con el contenido. </li>
+            <li> <b> Oauth: </b> La api cuenta con Open Authorization, que es un estándar abierto que permite flujos simples de autorización para sitios web o aplicaciones informáticas.</li>
     </ol>
 
     </div>

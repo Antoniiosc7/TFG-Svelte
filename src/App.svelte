@@ -10,17 +10,18 @@
 	import Chart from "./tennis/chart.svelte";
 	import Chart2 from "./tennis/chart2.svelte";
 	
-	import TwitchHub from "./externas/twitchHub.svelte"
-	import Twitch from "./externas/twitch.svelte";
-	import TwitchChart from "./externas/twitchchart.svelte";
-	/*
-	import ApitennisList from "./tennis/apitennislist.svelte";
-	import ApitennisChart from "./tennis/apitennislistchart.svelte";
-	import apiext5list from "./tennis/apiext5list.svelte";
-	import apiext5chart from "./Externas/apiext5chart.svelte";
-	import apiext6chart from "./tennis/apiext6chart.svelte";
-	import apiext7chart from "./tennis/apiext7chart.svelte";
-	*/
+	import TwitchHub from "./twitch/twitchHub.svelte"
+	import Twitch from "./twitch/twitch.svelte";
+	import TwitchChart from "./twitch/twitchchart.svelte";
+
+	import TopTennis from "./topTennis/topHub.svelte";
+	import ApitennisList from "./topTennis/topList.svelte";
+	import ApitennisChart from "./topTennis/topChart.svelte";
+
+	import topHubFem from './tennisFem/topHub.svelte';
+	import topListFem from './tennisFem/topList.svelte';
+	import topChartFem from './tennisFem/topChart.svelte';
+
 	import Info from "./Info.svelte";
 	import Footer from "./components/Footer.svelte";
 	import Header from "./components/Header.svelte";
@@ -59,14 +60,15 @@
 		"/twitch" : Twitch,
 		"/twitchchart" : TwitchChart,
 		"/twitchhub" : TwitchHub,
-		/*
-		"/tennis/apitennislist": ApitennisList,
-		"/tennis/apitennischart": ApitennisChart,
-		"/tennis/apiext5list": apiext5list,
-		"/tennis/apiext5chart": apiext5chart,
-		"/tennis/apiext6chart": apiext6chart,
-		"/tennis/apiext7chart": apiext7chart,
-		*/
+	
+		"/topTennis": TopTennis,
+		"/topTennis/list": ApitennisList,
+		"/topTennis/chart": ApitennisChart,
+
+		"/tennisFem": topHubFem,
+		"/tennisFem/list": topListFem,
+		"/tennisFem/chart": topChartFem,
+
 		"/premier-league" : Premier,
 		"/premier-league/:country/:year": PremierEdit,
 		"/premier-league/charts" : PremierChart,

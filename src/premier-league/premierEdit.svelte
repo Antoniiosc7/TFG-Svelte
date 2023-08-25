@@ -6,7 +6,7 @@
     import Table from 'sveltestrap/src/Table.svelte';
     import { getTransitionDuration } from "sveltestrap/src/utils";
     import { Alert } from "sveltestrap";
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     export let params = {};
 

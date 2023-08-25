@@ -31,13 +31,15 @@
                         <a class="nav-link" href="/#/TwitchHub" style="color: white;">Twitch</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/#/TwitchHub" style="color: white;">Top Tennis FEM</a>
+                        <a class="nav-link" href="/#/tennisFem" style="color: white;">Top Tennis FEM</a>
                     </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="/#/Productos" style="color: white;">Productos</a>
                     </li>
+                    -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/#/Visualizaciones" style="color: white;">Live Tennis Ranking</a>
+                        <a class="nav-link" href="/#/topTennis" style="color: white;">Live Tennis Ranking</a>
                     </li>
                     <li class="nav-item">
                         <div class="nav-link">|</div>

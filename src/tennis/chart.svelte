@@ -1,8 +1,8 @@
 <script>
 
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
-
+    import Button from 'sveltestrap/src/Button.svelte';
     import { onMount } from "svelte";
     const delay = (ms) => new Promise((res) => setTimeout(res, ms));
     let data = [];
@@ -69,11 +69,19 @@
 </svelte:head>
 
 <main>
+    <br>
+    <div class="button-container">
+        <Button outline color="btn btn-outline-primary" href="/#/Visualizaciones"
+            >Pagina de visualizaciones</Button
+        >
+        <Button outline color="btn btn-outline-primary" href="/#/Tennis"
+            >Front-end Tennis</Button
+        >
+    </div>
     <h2>Más torneos ganados</h2>
     <h4>Biblioteca: Chart.js</h4>
     <!--<button class="btn btn-primary hBack" type="button">Volver</button>
     <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
-    <a href="/#/tennis" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
 
     <canvas id="myChart" />
 
@@ -85,5 +93,12 @@
     }
     h4 {
         text-align: center;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 </style>

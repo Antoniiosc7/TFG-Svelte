@@ -4,7 +4,7 @@
 	import Button from 'sveltestrap/src/Button.svelte';
 	import { Alert } from 'sveltestrap';
 
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
 	var BASE_API_PATH = `${BASEUrl}/api/v2/tennis`;
 

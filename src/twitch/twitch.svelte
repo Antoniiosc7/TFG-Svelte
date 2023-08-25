@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';
 	import Button from 'sveltestrap/src/Button.svelte';
-    import { getBASEUrl } from '../../../config.js';
+	import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     let entries = [];
     onMount(getEntries);

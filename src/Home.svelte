@@ -64,16 +64,19 @@
         <li><a href="/#/twitchHub">Implementación</a></li>
         <br>
         <h5> API Clasificacion ATP Actualizada</h5>
-        <li>Documentación: <a href="https://dev.twitch.tv/docs/api/">https://dev.twitch.tv/docs/api/</a></li>
-        <li><a href="/#/twitchHub">Implementación</a></li>
+        <li>Documentación: <a href="https://rapidapi.com/cantagalloedoardo/api/ultimate-tennis1/details">https://rapidapi.com/cantagalloedoardo/api/ultimate-tennis1/details</a></li>
+        <li><a href="/#/topTennis">Implementación</a></li>
         <br>
         <h5> API Top Tennis Femenino</h5>
-        <li>Documentación: <a href="https://dev.twitch.tv/docs/api/">https://dev.twitch.tv/docs/api/</a></li>
-        <li><a href="/#/twitchHub">Implementación</a></li>
+        <li>Documentación: <a href="https://rapidapi.com/tipsters/api/sportscore1">https://rapidapi.com/tipsters/api/sportscore1</a></li>
+        <li><a href="/#/tennisFem">Implementación</a></li>
         <br>
+        <!--       
         <h5> API Productos</h5>
         <li>Documentación: <a href="https://dev.twitch.tv/docs/api/">https://dev.twitch.tv/docs/api/</a></li>
         <li><a href="/#/twitchHub">Implementación</a></li>
+        -->
+
     </div>
 </main>
 

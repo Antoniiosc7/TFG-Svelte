@@ -1,6 +1,6 @@
 <script>
     import {onMount} from 'svelte';
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     const delay = ms => new Promise(res => setTimeout(res,ms));
     let stats = [];
@@ -126,12 +126,5 @@
         padding-right: 7%;
     }
     
-    h2 {
-        text-align: center;
-    }
-    
-    h4 {
-        text-align: center;
-    }
- 
+
 </style>

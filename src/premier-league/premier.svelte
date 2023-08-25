@@ -1,5 +1,5 @@
 <script>
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     import { onMount } from 'svelte';
 	import Table from 'sveltestrap/src/Table.svelte';

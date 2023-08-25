@@ -4,7 +4,7 @@
     let data = [];
     let stats_title = [];
     let stats_views = [];
-    import { getBASEUrl } from '../../../config.js';
+    import { getBASEUrl } from '../../config.js';
     const BASEUrl = getBASEUrl();
     async function getStats() {
         console.log("Fetching stats....");
