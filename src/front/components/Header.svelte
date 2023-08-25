@@ -1,11 +1,11 @@
 <script>
-    import 'bootstrap/dist/css/bootstrap.min.css'; // Importar estilos de Bootstrap
+    import 'bootstrap/dist/css/bootstrap.min.css';
+
     let isDropdownOpen = false;
 
     function toggleDropdown() {
         isDropdownOpen = !isDropdownOpen;
     }
-
 
     function handleDropdownKey(event) {
         if (event.key === "Enter" || event.key === " ") {
@@ -13,78 +13,64 @@
             toggleDropdown();
         }
     }
-/*
-
- <div class="col">
-                <a href="/#/about"><h5>About</h5></a>
-            </div>
- 
-            <div class="col">
-                <a href="/#/integrations"><h5>Integrations</h5></a>
-            </div>
-            <div class="col">
-                <a href="/#/info"><h5>Info</h5></a>
-            </div>
-             <div class="col">
-                <a href="/#/Productos"><h5>Productos</h5></a>
-            </div>
-
-*/
 </script>
 
 <header>
-    <div class="container">
-        <div id="titulo" class="mb-4">
-            <a href="http://tfg.antoniosaborido.es"><h2 class="text-white">INICIO</h2></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3498db;">
+        <div class="container">
+            <a class="navbar-brand" href="http://tfg.antoniosaborido.es">INICIO</a>
+            <button class="navbar-toggler" type="button" on:click={toggleDropdown}>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style={{ ...isDropdownOpen ? 'display: block;' : 'display: none; ' }}>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/" style="color: white;">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/TwitchHub" style="color: white;">Twitch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/TwitchHub" style="color: white;">Top Tennis FEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/Productos" style="color: white;">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/Visualizaciones" style="color: white;">Live Tennis Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">|</div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" on:click={toggleDropdown} on:keydown={handleDropdownKey} tabindex="0">
+                            Front-Ends
+                        </a>
+                        <div class={"dropdown-menu " + (isDropdownOpen ? 'show' : '')} aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/#/Tennis" style="color: #2980b9;">Tennis</a>
+                            <a class="dropdown-item" href="/#/Premier-League" style="color: #2980b9;">Premier-League</a>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/Visualizaciones" style="color: white;" >Visualizaciones</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="row">
-            <!--
-           <div class="col">
-                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
-            </div>
-            <div class="col">
-                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
-            </div>
-              -->
-            <div class="col">
-                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
-            </div>
-      
-            <div class="col" id="negro"><h5>|</h5></div>
-
-            
-
-
-            <div class="col dropdown">
-                <a
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    on:click={toggleDropdown}
-                    on:keydown={handleDropdownKey}
-                    tabindex="0">
-                    <h5>Front-Ends</h5>
-                </a>
-                <div class={"dropdown-menu " + (isDropdownOpen ? 'show' : '')} aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/#/Tennis">Tennis</a>
-                    <a class="dropdown-item" href="/#/Premier-League">Premier-League</a>
-                </div>
-            </div>
-
-            <div class="col">
-                <a href="/#/Visualizaciones"><h5>Visualizaciones</h5></a>
-            </div>
-        </div>
-    </div>
+    </nav>
 </header>
 
 <style>
     a {
-        
+        color: white;
         text-decoration: none;
     }
+    li{
+        text-emphasis-color: white;
+    }
     a:hover {
-        color: blue;
+        color: #141414;
     }
 
     .row {
@@ -101,22 +87,15 @@
         padding: 10px;
     }
 
-    h2, h5 {
-        margin: 0;
-        text-align: center;
-        color: black;
-    }
-
-    /* Estilos para el dropdown */
-    .col.dropdown .dropdown-menu {
-        background-color: #2980b9;
-    }
-
     .col.dropdown .dropdown-item {
         color: rgb(0, 0, 0);
     }
 
     .col.dropdown .dropdown-item:hover {
         background-color: #1d67a8;
+    }
+
+    .dropdownMenuButton {
+        background-color: #2980b9;
     }
 </style>

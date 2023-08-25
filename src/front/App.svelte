@@ -9,9 +9,11 @@
 
 	import Chart from "./tennis/chart.svelte";
 	import Chart2 from "./tennis/chart2.svelte";
+	
+	import TwitchHub from "./externas/twitchHub.svelte"
+	import Twitch from "./externas/twitch.svelte";
+	import TwitchChart from "./externas/twitchchart.svelte";
 	/*
-	import Twitch from "./tennis/twitch.svelte";
-	import TwitchChart from "./tennis/twitchchart.svelte";
 	import ApitennisList from "./tennis/apitennislist.svelte";
 	import ApitennisChart from "./tennis/apitennislistchart.svelte";
 	import apiext5list from "./tennis/apiext5list.svelte";
@@ -53,9 +55,11 @@
 		"/tennis/:country/:year" : Edit,
 		"/tennis/chart" : Chart,
 		"/tennis/chart2" : Chart2,
+		
+		"/twitch" : Twitch,
+		"/twitchchart" : TwitchChart,
+		"/twitchhub" : TwitchHub,
 		/*
-		"/tennis/twitch" : Twitch,
-		"/tennis/twitchchart" : TwitchChart,
 		"/tennis/apitennislist": ApitennisList,
 		"/tennis/apitennischart": ApitennisChart,
 		"/tennis/apiext5list": apiext5list,

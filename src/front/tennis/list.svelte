@@ -259,7 +259,7 @@
 				<th>Grand Slams Ganados</th>
 				<th>Masters 1000 Ganados</th>
                 <th>Medallas Olimpicas</th>
-				<th></th>
+
 				<th> </th>
 			</tr>
 		</thead>
@@ -282,11 +282,6 @@
 					<td>{entry.most_grand_slam}</td>
                     <td>{entry.masters_finals}</td>
                     <td>{entry.olympic_gold_medals}</td>
-					<td><Button outline color="warning" on:click={function (){
-						window.location.href = `/#/tennis/${entry.country}/${entry.year}`
-					}}>
-						Editar
-					</Button>
 					<td><Button outline color="danger" on:click={BorrarEntry(entry.country,entry.year)}>
 						Borrar
 					</Button>

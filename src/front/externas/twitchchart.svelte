@@ -30,7 +30,7 @@
                 datasets: [
                     {
                         label: "Visitas",
-                        backgroundColor: "rgba(255, 99, 132, 0.2)",
+                        backgroundColor: "rgba(0, 145, 255, 0.2)",
                         borderColor: "rgb(255, 255, 255)",
                         data: stats_views,
                     },
@@ -60,12 +60,12 @@
     <!--<button class="btn btn-primary hBack" type="button">Volver</button>
     <a href="/#/tennis" class="btn btn-primary hBack" role="button" >Volver</a> -->
     <a
-        href="/#/integrations"
+        href="/#/TwitchHub"
         class="btn btn-primary btn-lg active"
         role="button"
         aria-pressed="true">Volver</a
     >
-
+        <br>
     <canvas id="myChart" />
 </main>
 

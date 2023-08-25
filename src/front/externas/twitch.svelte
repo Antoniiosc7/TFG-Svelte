@@ -30,12 +30,15 @@
 		
 	  </figure>
 	  <td align="center">
-		<Button color="success" on:click={function (){
-			window.location.href = `/#/tennis/twitchchart`
-		}}>
-			Gráfica visitas
-		</Button>
+		<a
+        href="/#/TwitchHub"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true">Volver</a
+    >
+	
 	</td>
+	<br>
 {#await entries}
 loading
 	{:then entries}
@@ -59,7 +62,7 @@ loading
 					<td>{entry.view_count}</td>
                     <td>
 						<iframe
-							src={`https://clips.twitch.tv/embed?clip=${entry.id}&parent=${getBASEUrl}`}
+							src={`https://clips.twitch.tv/embed?clip=${entry.id}&parent=antoniosaborido.es}`}
 							height="360"
 							width="640"
 							allowfullscreen
