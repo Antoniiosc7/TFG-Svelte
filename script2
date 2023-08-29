@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rollup -c
+nohup http-server --port 8081 &
+
+echo "Servidor svelte ejecutandose en el puerto 8082"
+

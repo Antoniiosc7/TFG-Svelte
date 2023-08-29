@@ -79,7 +79,7 @@
                 	from = null;
 					to = null;
 					checkMSG = "Búsqueda limpiada";
-					currentPage = 1; // Agrega esta línea para restablecer la página actual
+					currentPage = 1; 
 					getEntries();
 				}}>
 					Limpiar Búsqueda

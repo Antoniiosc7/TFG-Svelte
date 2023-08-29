@@ -14,8 +14,8 @@
 ---
 
 ## Documentación APIs propias
-- [API Tennis Documentación](https://sos2122-23.herokuapp.com/api/v1/tennis/docs)
-- [API Premier-League Documentación](https://sos2122-23.herokuapp.com/api/v2/tennis/docs)
+- [API Tennis Documentación](https://www.postman.com/crimson-station-718549/workspace/tfg/documentation/26629937-bf224f9d-cdf1-486f-ae09-1ff7eaa290da?entity=&branch=&version=)
+- [API Premier-League Documentación](https://www.postman.com/crimson-station-718549/workspace/tfg/documentation/26629937-0e9f6df9-5922-40b3-a79e-b8d840f990df?entity=&branch=&version=)
 
 ## APIs
 - [API Premier League](http://antoniosaborido.es/api/v2/premier-league)

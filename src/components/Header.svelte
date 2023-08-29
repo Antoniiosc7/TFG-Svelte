@@ -18,7 +18,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3498db;">
         <div class="container">
-            <a class="navbar-brand" href="http://tfg.antoniosaborido.es">INICIO</a>
+            <a class="navbar-brand" href="http://antoniosaborido.es">INICIO</a>
             <button class="navbar-toggler" type="button" on:click={toggleDropdown}>
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,13 +33,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/#/tennisFem" style="color: white;">Top Tennis FEM</a>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#/Productos" style="color: white;">Productos</a>
-                    </li>
-                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="/#/topTennis" style="color: white;">Live Tennis Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/Productos" style="color: white;">Productos</a>
                     </li>
                     <li class="nav-item">
                         <div class="nav-link">|</div>

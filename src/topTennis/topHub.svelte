@@ -17,15 +17,6 @@
     p {
         margin-bottom: 20px;
     }
-
-    ol {
-        list-style-type: decimal;
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 10px;
-    }
     .container {
         padding: 20px;
         max-width: 800px;

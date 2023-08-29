@@ -70,12 +70,11 @@
         <h5> API Top Tennis Femenino</h5>
         <li>Documentación: <a href="https://rapidapi.com/tipsters/api/sportscore1">https://rapidapi.com/tipsters/api/sportscore1</a></li>
         <li><a href="/#/tennisFem">Implementación</a></li>
-        <br>
-        <!--       
+        <br>   
         <h5> API Productos</h5>
-        <li>Documentación: <a href="https://dev.twitch.tv/docs/api/">https://dev.twitch.tv/docs/api/</a></li>
-        <li><a href="/#/twitchHub">Implementación</a></li>
-        -->
+        <li>Documentación: <a href="https://api.escuelajs.co/docs/">https://api.escuelajs.co/docs/</a></li>
+        <li><a href="/#/Productos">Implementación</a></li>
+
 
     </div>
 </main>
