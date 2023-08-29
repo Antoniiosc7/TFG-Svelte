@@ -30,12 +30,12 @@
 ## APIs externas
 ### API Twitch
 - Documentación: [https://dev.twitch.tv/docs/api/](https://dev.twitch.tv/docs/api/)
-- [Implementación](/#/twitchHub)
+- [Implementación](http://antoniosaborido.es:8081/#/twitchHub)
 
 ### API Clasificación ATP Actualizada
 - Documentación: [https://rapidapi.com/cantagalloedoardo/api/ultimate-tennis1/details](https://rapidapi.com/cantagalloedoardo/api/ultimate-tennis1/details)
-- [Implementación](/#/topTennis)
+- [Implementación](http://antoniosaborido.es:8081/#/topTennis)
 
 ### API Top Tennis Femenino
 - Documentación: [https://rapidapi.com/tipsters/api/sportscore1](https://rapidapi.com/tipsters/api/sportscore1)
-- [Implementación](/#/tennisFem)
+- [Implementación](http://antoniosaborido.es:8081/#/tennisFem)
