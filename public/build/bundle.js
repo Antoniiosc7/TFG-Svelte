@@ -2417,6 +2417,15 @@ var app = (function () {
     	let a7;
     	let t56;
     	let br5;
+    	let t57;
+    	let h53;
+    	let t59;
+    	let li11;
+    	let t60;
+    	let a8;
+    	let t62;
+    	let li12;
+    	let a9;
     	let each_value_2 = /*apis*/ ctx[0];
     	validate_each_argument(each_value_2);
     	let each_blocks_2 = [];
@@ -2559,6 +2568,18 @@ var app = (function () {
     			a7.textContent = "Implementación";
     			t56 = space();
     			br5 = element("br");
+    			t57 = space();
+    			h53 = element("h5");
+    			h53.textContent = "API Productos";
+    			t59 = space();
+    			li11 = element("li");
+    			t60 = text("Documentación: ");
+    			a8 = element("a");
+    			a8.textContent = "https://api.escuelajs.co/docs/";
+    			t62 = space();
+    			li12 = element("li");
+    			a9 = element("a");
+    			a9.textContent = "Implementación";
     			add_location(br0, file$y, 20, 4, 710);
     			add_location(h3, file$y, 23, 12, 781);
     			attr_dev(div0, "id", "titulo");
@@ -2610,6 +2631,13 @@ var app = (function () {
     			add_location(a7, file$y, 71, 12, 2761);
     			add_location(li10, file$y, 71, 8, 2757);
     			add_location(br5, file$y, 72, 8, 2816);
+    			add_location(h53, file$y, 73, 8, 2832);
+    			attr_dev(a8, "href", "https://api.escuelajs.co/docs/");
+    			add_location(a8, file$y, 74, 27, 2883);
+    			add_location(li11, file$y, 74, 8, 2864);
+    			attr_dev(a9, "href", "/#/Productos");
+    			add_location(a9, file$y, 75, 12, 2976);
+    			add_location(li12, file$y, 75, 8, 2972);
     			attr_dev(div1, "class", "container svelte-4bh629");
     			add_location(div1, file$y, 21, 4, 719);
     			add_location(main, file$y, 19, 0, 699);
@@ -2718,6 +2746,15 @@ var app = (function () {
     			append_dev(li10, a7);
     			append_dev(div1, t56);
     			append_dev(div1, br5);
+    			append_dev(div1, t57);
+    			append_dev(div1, h53);
+    			append_dev(div1, t59);
+    			append_dev(div1, li11);
+    			append_dev(li11, t60);
+    			append_dev(li11, a8);
+    			append_dev(div1, t62);
+    			append_dev(div1, li12);
+    			append_dev(li12, a9);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*apis*/ 1) {
@@ -9028,7 +9065,7 @@ var app = (function () {
     	return block;
     }
 
-    // (78:35) <Button outline color="info" on:click={() => {                  from = null;      to = null;      checkMSG = "Búsqueda limpiada";      currentPage = 1; // Agrega esta línea para restablecer la página actual      getEntries();     }}>
+    // (78:35) <Button outline color="info" on:click={() => {                  from = null;      to = null;      checkMSG = "Búsqueda limpiada";      currentPage = 1;       getEntries();     }}>
     function create_default_slot_2$4(ctx) {
     	let t;
 
@@ -9048,7 +9085,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$4.name,
     		type: "slot",
-    		source: "(78:35) <Button outline color=\\\"info\\\" on:click={() => {                  from = null;      to = null;      checkMSG = \\\"Búsqueda limpiada\\\";      currentPage = 1; // Agrega esta línea para restablecer la página actual      getEntries();     }}>",
+    		source: "(78:35) <Button outline color=\\\"info\\\" on:click={() => {                  from = null;      to = null;      checkMSG = \\\"Búsqueda limpiada\\\";      currentPage = 1;       getEntries();     }}>",
     		ctx
     	});
 
@@ -9281,17 +9318,17 @@ var app = (function () {
     			td4 = element("td");
     			img = element("img");
     			t9 = space();
-    			add_location(td0, file$o, 103, 20, 2967);
-    			add_location(td1, file$o, 104, 20, 3007);
-    			add_location(td2, file$o, 105, 20, 3050);
-    			add_location(td3, file$o, 106, 20, 3094);
+    			add_location(td0, file$o, 103, 20, 2913);
+    			add_location(td1, file$o, 104, 20, 2953);
+    			add_location(td2, file$o, 105, 20, 2996);
+    			add_location(td3, file$o, 106, 20, 3040);
     			if (!src_url_equal(img.src, img_src_value = /*entry*/ ctx[18].images)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*entry*/ ctx[18].description);
     			set_style(img, "width", "300px");
     			set_style(img, "height", "auto");
-    			add_location(img, file$o, 107, 24, 3147);
-    			add_location(td4, file$o, 107, 20, 3143);
-    			add_location(tr, file$o, 102, 16, 2942);
+    			add_location(img, file$o, 107, 24, 3093);
+    			add_location(td4, file$o, 107, 20, 3089);
+    			add_location(tr, file$o, 102, 16, 2888);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -9390,15 +9427,15 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$o, 93, 16, 2695);
-    			add_location(th1, file$o, 94, 16, 2723);
-    			add_location(th2, file$o, 95, 16, 2755);
-    			add_location(th3, file$o, 96, 16, 2787);
-    			add_location(th4, file$o, 97, 16, 2824);
-    			add_location(tr, file$o, 92, 12, 2674);
+    			add_location(th0, file$o, 93, 16, 2641);
+    			add_location(th1, file$o, 94, 16, 2669);
+    			add_location(th2, file$o, 95, 16, 2701);
+    			add_location(th3, file$o, 96, 16, 2733);
+    			add_location(th4, file$o, 97, 16, 2770);
+    			add_location(tr, file$o, 92, 12, 2620);
     			attr_dev(thead, "id", "titulitos");
-    			add_location(thead, file$o, 91, 8, 2639);
-    			add_location(tbody, file$o, 100, 8, 2881);
+    			add_location(thead, file$o, 91, 8, 2585);
+    			add_location(tbody, file$o, 100, 8, 2827);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -9506,7 +9543,7 @@ var app = (function () {
     			t = text(/*currentPage*/ ctx[2]);
     			attr_dev(button, "class", "svelte-1y3e9bz");
     			toggle_class(button, "disabled", /*currentPage*/ ctx[2] === /*index*/ ctx[17]);
-    			add_location(button, file$o, 124, 8, 3612);
+    			add_location(button, file$o, 124, 8, 3558);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -9610,11 +9647,11 @@ var app = (function () {
     			add_location(figure, file$o, 38, 4, 971);
     			button0.disabled = button0_disabled_value = /*currentPage*/ ctx[2] === 1;
     			attr_dev(button0, "class", "svelte-1y3e9bz");
-    			add_location(button0, file$o, 114, 4, 3348);
+    			add_location(button0, file$o, 114, 4, 3294);
     			attr_dev(button1, "class", "svelte-1y3e9bz");
-    			add_location(button1, file$o, 128, 4, 3711);
+    			add_location(button1, file$o, 128, 4, 3657);
     			attr_dev(div, "class", "pagination svelte-1y3e9bz");
-    			add_location(div, file$o, 113, 0, 3319);
+    			add_location(div, file$o, 113, 0, 3265);
     			add_location(main, file$o, 37, 0, 960);
     		},
     		l: function claim(nodes) {
@@ -9790,7 +9827,7 @@ var app = (function () {
     		$$invalidate(3, from = null);
     		$$invalidate(4, to = null);
     		$$invalidate(0, checkMSG = "Búsqueda limpiada");
-    		$$invalidate(2, currentPage = 1); // Agrega esta línea para restablecer la página actual
+    		$$invalidate(2, currentPage = 1);
     		getEntries();
     	};
 
@@ -11624,52 +11661,52 @@ var app = (function () {
     			button2.textContent = "Ver más";
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "btn btn-success");
-    			add_location(button0, file$i, 75, 112, 1495);
-    			attr_dev(a0, "class", "documentacion svelte-1qt2div");
+    			add_location(button0, file$i, 66, 112, 1372);
+    			attr_dev(a0, "class", "documentacion svelte-1wfuinm");
     			attr_dev(a0, "href", "https://rapidapi.com/cantagalloedoardo/api/ultimate-tennis1/details");
-    			add_location(a0, file$i, 75, 12, 1395);
-    			attr_dev(h1, "class", "svelte-1qt2div");
-    			add_location(h1, file$i, 73, 8, 1355);
-    			add_location(br0, file$i, 77, 8, 1590);
-    			attr_dev(p0, "class", "svelte-1qt2div");
-    			add_location(p0, file$i, 78, 4, 1599);
-    			attr_dev(div0, "class", "container svelte-1qt2div");
-    			add_location(div0, file$i, 72, 4, 1323);
-    			add_location(br1, file$i, 80, 0, 1871);
-    			attr_dev(h20, "class", "card-title svelte-1qt2div");
-    			add_location(h20, file$i, 83, 12, 1949);
-    			attr_dev(img0, "class", "card-image svelte-1qt2div");
+    			add_location(a0, file$i, 66, 12, 1272);
+    			attr_dev(h1, "class", "svelte-1wfuinm");
+    			add_location(h1, file$i, 64, 8, 1232);
+    			add_location(br0, file$i, 68, 8, 1467);
+    			attr_dev(p0, "class", "svelte-1wfuinm");
+    			add_location(p0, file$i, 69, 4, 1476);
+    			attr_dev(div0, "class", "container svelte-1wfuinm");
+    			add_location(div0, file$i, 63, 4, 1200);
+    			add_location(br1, file$i, 71, 0, 1748);
+    			attr_dev(h20, "class", "card-title svelte-1wfuinm");
+    			add_location(h20, file$i, 74, 12, 1826);
+    			attr_dev(img0, "class", "card-image svelte-1wfuinm");
     			if (!src_url_equal(img0.src, img0_src_value = "https://www.atptour.com/es/news/www.atptour.com/-/media/images/news/2019/11/25/02/05/year-end-top-10-2019-web.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Imagen de Clips");
-    			add_location(img0, file$i, 84, 12, 1999);
-    			attr_dev(p1, "class", "card-content svelte-1qt2div");
-    			add_location(p1, file$i, 85, 12, 2178);
+    			add_location(img0, file$i, 75, 12, 1876);
+    			attr_dev(p1, "class", "card-content svelte-1wfuinm");
+    			add_location(p1, file$i, 76, 12, 2055);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$i, 86, 70, 2431);
+    			add_location(button1, file$i, 77, 70, 2308);
     			attr_dev(a1, "href", "http://antoniosaborido.es:8081/#/topTennis/list");
-    			add_location(a1, file$i, 86, 12, 2373);
-    			attr_dev(div1, "class", "card svelte-1qt2div");
-    			add_location(div1, file$i, 82, 8, 1918);
-    			attr_dev(h21, "class", "card-title svelte-1qt2div");
-    			add_location(h21, file$i, 90, 12, 2553);
-    			attr_dev(img1, "class", "card-image svelte-1qt2div");
+    			add_location(a1, file$i, 77, 12, 2250);
+    			attr_dev(div1, "class", "card svelte-1wfuinm");
+    			add_location(div1, file$i, 73, 8, 1795);
+    			attr_dev(h21, "class", "card-title svelte-1wfuinm");
+    			add_location(h21, file$i, 81, 12, 2430);
+    			attr_dev(img1, "class", "card-image svelte-1wfuinm");
     			if (!src_url_equal(img1.src, img1_src_value = "https://i.ytimg.com/vi/uCyYSiueR2s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB0YjbJ8BvLMmFHnLq4kY7QOSat9A")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "TennisAPI Image");
-    			add_location(img1, file$i, 91, 12, 2605);
-    			attr_dev(p2, "class", "card-content svelte-1qt2div");
-    			add_location(p2, file$i, 92, 12, 2810);
+    			add_location(img1, file$i, 82, 12, 2482);
+    			attr_dev(p2, "class", "card-content svelte-1wfuinm");
+    			add_location(p2, file$i, 83, 12, 2687);
     			attr_dev(button2, "type", "button");
     			attr_dev(button2, "class", "btn btn-primary");
-    			add_location(button2, file$i, 93, 71, 2994);
+    			add_location(button2, file$i, 84, 71, 2871);
     			attr_dev(a2, "href", "http://antoniosaborido.es:8081/#/topTennis/chart");
-    			add_location(a2, file$i, 93, 12, 2935);
-    			attr_dev(div2, "class", "card svelte-1qt2div");
-    			add_location(div2, file$i, 89, 8, 2522);
-    			attr_dev(div3, "class", "cards-container svelte-1qt2div");
-    			add_location(div3, file$i, 81, 4, 1880);
-    			attr_dev(main, "class", "svelte-1qt2div");
-    			add_location(main, file$i, 71, 0, 1312);
+    			add_location(a2, file$i, 84, 12, 2812);
+    			attr_dev(div2, "class", "card svelte-1wfuinm");
+    			add_location(div2, file$i, 80, 8, 2399);
+    			attr_dev(div3, "class", "cards-container svelte-1wfuinm");
+    			add_location(div3, file$i, 72, 4, 1757);
+    			attr_dev(main, "class", "svelte-1wfuinm");
+    			add_location(main, file$i, 62, 0, 1189);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12301,7 +12338,7 @@ var app = (function () {
     const { console: console_1$8, document: document_1 } = globals;
     const file$g = "src/topTennis/topChart.svelte";
 
-    // (65:8) <Button outline color="btn btn-outline-primary" href="/#/topTennis"             >
+    // (65:12) <Button outline color="btn btn-outline-primary" href="/#/topTennis"                 >
     function create_default_slot$8(ctx) {
     	let t;
 
@@ -12321,7 +12358,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$8.name,
     		type: "slot",
-    		source: "(65:8) <Button outline color=\\\"btn btn-outline-primary\\\" href=\\\"/#/topTennis\\\"             >",
+    		source: "(65:12) <Button outline color=\\\"btn btn-outline-primary\\\" href=\\\"/#/topTennis\\\"                 >",
     		ctx
     	});
 
@@ -12376,18 +12413,18 @@ var app = (function () {
     			t6 = space();
     			canvas = element("canvas");
     			if (!src_url_equal(script.src, script_src_value = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$g, 55, 4, 1782);
-    			add_location(br, file$g, 62, 4, 1941);
-    			attr_dev(div, "class", "button-container svelte-1iue9nj");
-    			add_location(div, file$g, 63, 4, 1952);
-    			attr_dev(h2, "class", "svelte-1iue9nj");
-    			add_location(h2, file$g, 68, 4, 2112);
-    			attr_dev(h4, "class", "svelte-1iue9nj");
-    			add_location(h4, file$g, 69, 4, 2137);
+    			add_location(script, file$g, 55, 8, 1998);
+    			add_location(br, file$g, 62, 8, 2181);
+    			attr_dev(div, "class", "button-container svelte-2o3f4v");
+    			add_location(div, file$g, 63, 8, 2196);
+    			attr_dev(h2, "class", "svelte-2o3f4v");
+    			add_location(h2, file$g, 68, 8, 2376);
+    			attr_dev(h4, "class", "svelte-2o3f4v");
+    			add_location(h4, file$g, 69, 8, 2405);
     			attr_dev(canvas, "id", "myChart");
-    			add_location(canvas, file$g, 73, 4, 2332);
-    			attr_dev(main, "class", "svelte-1iue9nj");
-    			add_location(main, file$g, 61, 0, 1930);
+    			add_location(canvas, file$g, 73, 8, 2612);
+    			attr_dev(main, "class", "svelte-2o3f4v");
+    			add_location(main, file$g, 61, 4, 2166);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -14222,74 +14259,74 @@ var app = (function () {
     			a9 = element("a");
     			a9.textContent = "Visualizaciones";
     			attr_dev(a0, "class", "navbar-brand svelte-biyw6v");
-    			attr_dev(a0, "href", "http://tfg.antoniosaborido.es");
+    			attr_dev(a0, "href", "http://antoniosaborido.es");
     			add_location(a0, file$a, 20, 12, 508);
     			attr_dev(span, "class", "navbar-toggler-icon");
-    			add_location(span, file$a, 22, 16, 680);
+    			add_location(span, file$a, 22, 16, 676);
     			attr_dev(button, "class", "navbar-toggler");
     			attr_dev(button, "type", "button");
-    			add_location(button, file$a, 21, 12, 592);
+    			add_location(button, file$a, 21, 12, 588);
     			attr_dev(a1, "class", "nav-link svelte-biyw6v");
     			attr_dev(a1, "href", "/#/");
     			set_style(a1, "color", "white");
-    			add_location(a1, file$a, 27, 24, 979);
+    			add_location(a1, file$a, 27, 24, 975);
     			attr_dev(li0, "class", "nav-item svelte-biyw6v");
-    			add_location(li0, file$a, 26, 20, 933);
+    			add_location(li0, file$a, 26, 20, 929);
     			attr_dev(a2, "class", "nav-link svelte-biyw6v");
     			attr_dev(a2, "href", "/#/TwitchHub");
     			set_style(a2, "color", "white");
-    			add_location(a2, file$a, 30, 24, 1133);
+    			add_location(a2, file$a, 30, 24, 1129);
     			attr_dev(li1, "class", "nav-item svelte-biyw6v");
-    			add_location(li1, file$a, 29, 20, 1087);
+    			add_location(li1, file$a, 29, 20, 1083);
     			attr_dev(a3, "class", "nav-link svelte-biyw6v");
     			attr_dev(a3, "href", "/#/tennisFem");
     			set_style(a3, "color", "white");
-    			add_location(a3, file$a, 33, 24, 1298);
+    			add_location(a3, file$a, 33, 24, 1294);
     			attr_dev(li2, "class", "nav-item svelte-biyw6v");
-    			add_location(li2, file$a, 32, 20, 1252);
+    			add_location(li2, file$a, 32, 20, 1248);
     			attr_dev(a4, "class", "nav-link svelte-biyw6v");
     			attr_dev(a4, "href", "/#/topTennis");
     			set_style(a4, "color", "white");
-    			add_location(a4, file$a, 36, 24, 1471);
+    			add_location(a4, file$a, 36, 24, 1467);
     			attr_dev(li3, "class", "nav-item svelte-biyw6v");
-    			add_location(li3, file$a, 35, 20, 1425);
+    			add_location(li3, file$a, 35, 20, 1421);
     			attr_dev(a5, "class", "nav-link svelte-biyw6v");
     			attr_dev(a5, "href", "/#/Productos");
     			set_style(a5, "color", "white");
-    			add_location(a5, file$a, 39, 24, 1649);
+    			add_location(a5, file$a, 39, 24, 1645);
     			attr_dev(li4, "class", "nav-item svelte-biyw6v");
-    			add_location(li4, file$a, 38, 20, 1603);
+    			add_location(li4, file$a, 38, 20, 1599);
     			attr_dev(div0, "class", "nav-link");
-    			add_location(div0, file$a, 42, 24, 1817);
+    			add_location(div0, file$a, 42, 24, 1813);
     			attr_dev(li5, "class", "nav-item svelte-biyw6v");
-    			add_location(li5, file$a, 41, 20, 1771);
+    			add_location(li5, file$a, 41, 20, 1767);
     			attr_dev(a6, "class", "nav-link dropdown-toggle svelte-biyw6v");
     			set_style(a6, "color", "white");
     			attr_dev(a6, "id", "dropdownMenuButton");
     			attr_dev(a6, "data-toggle", "dropdown");
     			attr_dev(a6, "tabindex", "0");
-    			add_location(a6, file$a, 45, 24, 1948);
+    			add_location(a6, file$a, 45, 24, 1944);
     			attr_dev(a7, "class", "dropdown-item svelte-biyw6v");
     			attr_dev(a7, "href", "/#/Tennis");
     			set_style(a7, "color", "#2980b9");
-    			add_location(a7, file$a, 49, 28, 2345);
+    			add_location(a7, file$a, 49, 28, 2341);
     			attr_dev(a8, "class", "dropdown-item svelte-biyw6v");
     			attr_dev(a8, "href", "/#/Premier-League");
     			set_style(a8, "color", "#2980b9");
-    			add_location(a8, file$a, 50, 28, 2450);
+    			add_location(a8, file$a, 50, 28, 2446);
     			attr_dev(div1, "class", div1_class_value = "" + (null_to_empty("dropdown-menu " + (/*isDropdownOpen*/ ctx[0] ? 'show' : '')) + " svelte-biyw6v"));
     			attr_dev(div1, "aria-labelledby", "dropdownMenuButton");
-    			add_location(div1, file$a, 48, 24, 2216);
+    			add_location(div1, file$a, 48, 24, 2212);
     			attr_dev(li6, "class", "nav-item dropdown svelte-biyw6v");
-    			add_location(li6, file$a, 44, 20, 1893);
+    			add_location(li6, file$a, 44, 20, 1889);
     			attr_dev(a9, "class", "nav-link svelte-biyw6v");
     			attr_dev(a9, "href", "/#/Visualizaciones");
     			set_style(a9, "color", "white");
-    			add_location(a9, file$a, 55, 24, 2691);
+    			add_location(a9, file$a, 55, 24, 2687);
     			attr_dev(li7, "class", "nav-item svelte-biyw6v");
-    			add_location(li7, file$a, 54, 20, 2645);
+    			add_location(li7, file$a, 54, 20, 2641);
     			attr_dev(ul, "class", "navbar-nav ml-auto");
-    			add_location(ul, file$a, 25, 16, 881);
+    			add_location(ul, file$a, 25, 16, 877);
     			attr_dev(div2, "class", "collapse navbar-collapse");
 
     			attr_dev(div2, "style", div2_style_value = {
@@ -14298,7 +14335,7 @@ var app = (function () {
     				: 'display: none; '
     			});
 
-    			add_location(div2, file$a, 24, 12, 756);
+    			add_location(div2, file$a, 24, 12, 752);
     			attr_dev(div3, "class", "container svelte-biyw6v");
     			add_location(div3, file$a, 19, 8, 472);
     			attr_dev(nav, "class", "navbar navbar-expand-lg navbar-dark");
