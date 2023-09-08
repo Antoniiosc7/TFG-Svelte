@@ -5,13 +5,26 @@
 - Visualizaciones de gráficas conjuntas a APIs propias editables en las páginas front-end
 - Integraciones de APIs externas junto a sus respectivas visualizaciones
 
+## Arrancar con Docker:
+
+-[docker build -t svelte .]
+
+-[docker run -d -p 8081:80 svelte]
+
+(Se iniciará en el puerto 8081)
+
+## Arrancar con http-server
+
+- [nohup http-server --port 8081 &]
+
+(Utilizo nohup para que el proceso siga abierto aun cuando se cierre la terminal, y también se iniciará en el puerto 81)
+
 ## Repositorio GitHub
 - [Repositorio en GitHub](https://github.com/Antoniiosc7/TFG-Svelte)
 
 ## Desplegado en
 - [http://antoniosaborido.es:8081](http://antoniosaborido.es:8081)
 
----
 
 ## Documentación APIs propias
 - [API Tennis Documentación](https://www.postman.com/crimson-station-718549/workspace/tfg/documentation/26629937-bf224f9d-cdf1-486f-ae09-1ff7eaa290da?entity=&branch=&version=)
@@ -25,7 +38,7 @@
 - [Tennis Frontend](http://antoniosaborido.es:8081/#/Tennis)
 - [Premier-League Frontend](http://antoniosaborido.es:8081/#/Premier-League)
 
----
+
 
 ## APIs externas
 ### API Twitch
@@ -39,3 +52,7 @@
 ### API Top Tennis Femenino
 - Documentación: [https://rapidapi.com/tipsters/api/sportscore1](https://rapidapi.com/tipsters/api/sportscore1)
 - [Implementación](http://antoniosaborido.es:8081/#/tennisFem)
+
+### API Productos
+- Documentación: [https://api.escuelajs.co/docs/](https://api.escuelajs.co/docs/)
+- [Implementación](http://antoniosaborido.es:8081/#/Productos)

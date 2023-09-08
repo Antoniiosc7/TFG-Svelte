@@ -2,7 +2,7 @@ const cool = require("cool-ascii-faces");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 80;
 const Datastore = require('nedb');
 
 

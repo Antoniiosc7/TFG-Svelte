@@ -22,7 +22,6 @@
 	import topListFem from './tennisFem/topList.svelte';
 	import topChartFem from './tennisFem/topChart.svelte';
 
-	import Info from "./Info.svelte";
 	import Footer from "./components/Footer.svelte";
 	import Header from "./components/Header.svelte";
 	import Grupal1 from "./Grupal1.svelte";
@@ -45,8 +44,6 @@
 		"/Grupal1" : Grupal1,
 		"/Grupal2" : Grupal2,
 	
-
-		"/info" : Info,
 		"/about" : About,
 		"/analytics" : Analytics,
 
